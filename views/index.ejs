@@ -6,7 +6,11 @@
 	</head>	
 	<body>
 		<h1>
-			Bienvenido al portal oficial de FutbolWin.
+		<% if (typeof user !== 'undefined') { %>
+				1. Bienvenido <b>'<%= user.name %>'</b> al portal oficial de FutbolWin.	
+		<% } else { %>
+				2. Bienvenido 'Quien quieras que seas' al portal oficial de FutbolWin.
+		<% } %>
 		</h1>
 
 		<a href="http://localhost:1337/signup">Registrate</a> / <a href="http://localhost:1337/login">Ingresar</a>

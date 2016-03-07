@@ -1,5 +1,4 @@
-
-module.exports = {
+ module.exports = {
 
             _config: {
               actions: false,
@@ -30,6 +29,7 @@ module.exports = {
             },
 
             create: function(request, response) {
+              console.log('Entra a crear el usuario....');
               User.create(request.params.all(), function userCreated(err, user) {
                 if (err) {
                   return response.redirect('/user/new');
