@@ -1,0 +1,16 @@
+<h1>Signup</h1>
+
+<h1> <a href="http://localhost:1337/signup/es">Español</a> / <a href="http://localhost:1337/signup/en">English</a> </h1>
+
+<form method='POST' action='/user'>
+
+  <%= i18n('USER.CREATE.USER_NAME') %>: <input type='text' name='username'>
+  <br><br>
+  <%= i18n('USER.CREATE.EMAIL') %> : <input type='email' name='email'>
+  <br><br>
+  <%= i18n('USER.CREATE.PASSWORD') %> : <input type='password' name='password'>
+  <br><br>
+  <input type='submit' value='<%= i18n('COMMONS.SAVE') %>'>
+  <br><br>
+  
+</form>
